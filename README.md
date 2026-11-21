@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WEARLY – Fashion E-Commerce
+
+**WEARLY** is a fashion e-commerce website designed to provide a convenient online shopping experience for **Male, Female, and Kids** fashion collections.
+
+The project is developed as part of the **Uji Kompetensi Keahlian (UKK)** for the Software Engineering (Rekayasa Perangkat Lunak) program.
+
+## Overview
+
+WEARLY aims to provide an integrated online shopping platform with dedicated interfaces and functionalities for three user roles:
+
+- **Owner** – Manages the overall business operations and monitors sales performance.
+- **Admin** – Manages products, categories, inventory, orders, promotions, and other store operations.
+- **Customer** – Browses fashion collections, manages shopping carts, places orders, and tracks purchases.
+
+## Tech Stack
+
+The project is built using the following technologies:
+
+| Technology | Purpose |
+|---|---|
+| Next.js | Full-stack web framework |
+| TypeScript | Type-safe development |
+| React | User interface library |
+| Tailwind CSS | CSS utility framework |
+| shadcn/ui | UI component library |
+| MySQL | Relational database |
+| Prisma ORM | Database management and ORM |
+| XAMPP | Local database environment |
+| Git & GitHub | Version control |
+
+## Main Features
+
+The planned features include:
+
+- **Authentication & Authorization** – User authentication and role-based access control.
+- **Product Management** – Manage fashion products, categories, variants, and inventory.
+- **Product Catalog** – Browse Male, Female, and Kids fashion collections.
+- **Shopping Cart** – Manage selected products before checkout.
+- **Wishlist** – Save favorite products.
+- **Checkout & Payment** – Process orders and manage payments.
+- **Order Management** – Track and manage customer orders.
+- **Voucher & Promotions** – Manage discounts and promotional offers.
+- **Reviews & Ratings** – Allow customers to review purchased products.
+- **Dashboard & Reports** – Monitor store operations and sales performance.
+
+*Note: Features are planned and will be implemented progressively throughout development.*
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Make sure the following tools are installed:
+
+- [Node.js](https://nodejs.org/)
+- [XAMPP](https://www.apachefriends.org/)
+- [Git](https://git-scm.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/USERNAME/wearly.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd wearly
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure the database**
+
+- Open XAMPP Control Panel.
+- Start MySQL.
+- Open phpMyAdmin at `http://localhost/phpmyadmin`.
+- Create a database named `wearly_db`.
+
+**5. Configure environment variables**
+
+Create a `.env` file in the project root and configure the database connection according to your local MySQL settings.
+
+```env
+DATABASE_URL="mysql://root:@localhost:3306/wearly_db"
+```
+
+**6. Generate Prisma Client**
+
+```bash
+npx prisma generate
+```
+
+**7. Run database migrations**
+
+```bash
+npx prisma migrate dev
+```
+
+**8. Start the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<kbd>In Development</kbd>
 
-## Learn More
+WEARLY is currently under development. Features, database structures, and user interfaces will be implemented and refined progressively.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is developed for educational purposes as part of the Software Engineering (RPL) competency assessment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**WEARLY – Your Style, Your Way.**
