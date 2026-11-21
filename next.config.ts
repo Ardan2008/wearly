@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Security
+  poweredByHeader: false,
+
+  // Turbopack configuration
   turbopack: {
     rules: {
       "*.css": {
