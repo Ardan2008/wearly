@@ -39,13 +39,13 @@
 /generated/prisma
 
 # Keep Prisma migrations tracked
-# prisma/migrations/
+# ==========================================
 
 # ==========================================
 # Local Uploads
 # ==========================================
 /storage/
- /uploads/
+/uploads/
 
 # ==========================================
 # AI Coding Assistant
@@ -53,6 +53,7 @@
 .agents/
 .claude/
 .windsurf/
+skills-lock.json
 
 # ==========================================
 # Vercel
