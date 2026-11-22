@@ -90,7 +90,7 @@ npm install
 Create a `.env` file in the project root and configure the database connection according to your local MySQL settings.
 
 ```env
-DATABASE_URL="mysql://root:@localhost:3306/wearly_db"
+DATABASE_URL="mysql://root:@localhost:3308/wearly_db"
 ```
 
 **6. Generate Prisma Client**
